@@ -28,9 +28,17 @@ console.log('playButton', playButton, typeof playButton);
 
 
 
-for(let i=1; i<=100; i++ ){
-    const newDiv = document.createElement('div');
-    newDiv.classList.add("box");
-    newDiv.append(i);
-    boxContainer.append(newDiv);
-}
+playButton.addEventListener('click', function(){
+    for(let i=1; i<=100; i++ ){
+        const newDiv = document.createElement('div');
+        newDiv.classList.add("box");
+        newDiv.append(i);
+        boxContainer.append(newDiv);
+    
+        //aggiungo il click
+        newDiv.addEventListener('click', function(){
+            this.classList.toggle('clicked');
+        })
+    }
+})
+
