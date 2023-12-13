@@ -20,7 +20,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     height: 100%;
-    
+    align-content: flex-start;
 }
 
 .box{
@@ -29,12 +29,14 @@ body{
     color: white;
     height: 10%;
     width: 10%;
-    line-height: 70px;
     text-align: center;
-    
+    line-height: 70px;
 }
 
 .clicked{
     background-color: red;
 
+}
+.level_container{
+    display: none;
 }
