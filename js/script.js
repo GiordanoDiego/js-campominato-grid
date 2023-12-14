@@ -57,7 +57,7 @@ easy.addEventListener('click', function(){
     boxContainer.innerHTML= "";
     for(let i=1; i<=100; i++ ){
         const newDiv = document.createElement('div');
-        newDiv.classList.add("box");
+        newDiv.classList.add("box", "box-100");
         newDiv.append(i);
         boxContainer.append(newDiv);
     
@@ -73,7 +73,7 @@ medium.addEventListener('click', function(){
     boxContainer.innerHTML= "";
     for(let i=1; i<=81; i++ ){
         const newDiv = document.createElement('div');
-        newDiv.classList.add("box");
+        newDiv.classList.add("box" , "box-81");
         newDiv.append(i);
         boxContainer.append(newDiv);
     
@@ -89,7 +89,7 @@ hard.addEventListener('click', function(){
     boxContainer.innerHTML= "";
     for(let i=1; i<=49; i++ ){
         const newDiv = document.createElement('div');
-        newDiv.classList.add("box");
+        newDiv.classList.add("box", "box-49");
         newDiv.append(i);
         boxContainer.append(newDiv);
     
